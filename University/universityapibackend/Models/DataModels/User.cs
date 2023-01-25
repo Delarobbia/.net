@@ -12,5 +12,6 @@ namespace Universityapibackend.Models.DataModels
         public string Email { get; set; } = string.Empty;
         [Required]
         public string Password { get; set; } = string.Empty;
+        public ICollection<BaseEntity> BaseEntities { get; set; } = new List<BaseEntity>();
     }
 }
